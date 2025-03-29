@@ -9,10 +9,11 @@
   ],
   "main": "target/wasm32-wasi/release/fluentui_next_appdir_directive.wasm",
   "scripts": {
-    "build-wasi": "cargo build --target wasm32-wasi",
+    "build-wasi": "cargo build --target wasm32-wasip1",
+    "build-wasi:release": "cargo build --target wasm32-wasip1 --release",
     "build-wasm32": "cargo build --target wasm32-unknown-unknown",
-    "prepare": "yarn build-wasi --release",
-    "prepare:release": "yarn build-wasi --release && cp target/wasm32-wasi/release/fluentui_next_appdir_directive.wasm ./fluentui_next_appdir_directive.wasm",
+    "prepare": "npm run build-wasi:release",
+    "prepare:release": "npm run build-wasi:release && cp target/wasm32-wasip1/release/fluentui_next_appdir_directive.wasm ./fluentui_next_appdir_directive.wasm",
     "test": "cargo test -p directive_transform"
   },
   "files": [
