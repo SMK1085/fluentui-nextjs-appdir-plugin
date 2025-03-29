@@ -455,7 +455,7 @@ checksum = "486f806e73c5707928240ddc295403b1b93c96a02038563881c4a2fd84b81ac4"
 
 [[package]]
 name = "fluentui-next-appdir-directive"
-version = "0.1.0"
+version = "0.3.0"
 dependencies = [
  "directive_transform",
  "serde",

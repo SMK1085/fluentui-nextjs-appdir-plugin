@@ -1,8 +1,6 @@
 use directive_transform::Config;
 use swc_core::{
-    ecma::{
-        ast::Program,
-    },
+    ecma::ast::Program,
     plugin::{plugin_transform, proxies::TransformPluginProgramMetadata, metadata::TransformPluginMetadataContextKind},
 };
 
