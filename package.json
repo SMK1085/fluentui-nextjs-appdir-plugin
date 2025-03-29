@@ -7,7 +7,7 @@
   "keywords": [
     "swc-plugin"
   ],
-  "main": "target/wasm32-wasi/release/fluentui_next_appdir_directive.wasm",
+  "main": "fluentui_next_appdir_directive.wasm",
   "scripts": {
     "build-wasi": "cargo build --target wasm32-wasip1",
     "build-wasi:release": "cargo build --target wasm32-wasip1 --release",
